@@ -20,18 +20,34 @@
         </nav>
          <section class="mylikeness"> <!-- my picture, name and title -->
              <h1 class="nich-title">Nich Bailey</h1>
-             <h3 id="job-title" class="nich-title">Fullstack Web Developer</h3>
+             <h3 id="job-title" class="nich-title">Full Stack Web Developer</h3>
          </section>
-         <section class="travel-photos"> <!-- travel photographs -->
+         <section class="travel-photos">
              <div class="travphoto">
-                 <img src="assets/images/travelphoto1.jpg" alt="guatape" class="scenery">
-             </div>
-             <div class="travphoto">
-                 <img src="assets/images/travelphoto2.jpg" alt="san pedro de atacama" class="scenery">
-             </div>
-             <div class="travphoto">
-                 <img src="assets/images/travelphoto3.jpg" alt="cuba" class="scenery">
-             </div>
+               <img id="myImg1" src="assets/images/travelphoto1.jpg" alt="Guatape" class="scenery">
+               <div id="myModal1" class="modal">
+                 <span class="close" onclick="document.getElementById('myModal1').style.display='none'">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption1"></div>
+                </div>
+              </div>
+            <div class="travphoto">
+              <img id="myImg2" src="assets/images/travelphoto2.jpg" alt="San Pedro de Atacama" class="scenery">
+                <div id="myModal2" class="modal">
+                <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+                <img class="modal-content" id="img02">
+                <div id="caption2"></div>
+              </div>
+            </div>
+            <div class="travphoto">
+              <img id="myImg3" src="assets/images/travelphoto3.jpg" alt="Cuba" class="scenery">
+                <div id="myModal3" class="modal">
+                <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+                <img class="modal-content" id="img03">
+                <div id="caption3"></div>
+              </div>
+            </div>
          </section>
+         <script src="scripts/landing.js"></script>
      </body>
  </html>
