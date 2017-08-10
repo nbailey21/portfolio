@@ -11,6 +11,7 @@ var captionText2 = document.getElementById("caption2");
 var img3 = document.getElementById('myImg3');
 var modalImg3 = document.getElementById("img03");
 var captionText3 = document.getElementById("caption3");
+
 img1.onclick = function(){
     modal1.style.display = "block";
     modalImg1.src = this.src;

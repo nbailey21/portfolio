@@ -15,7 +15,6 @@ html {
 
  .navbar {
      position: relative;
-     height: 6rem;
      padding: 0.5rem;
      background-color: rgb(220,235,245);
      z-index: 10;
@@ -30,15 +29,18 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    overflow: hidden;
     float: right;
 }
 
+li {
+  float: right;
+}
+
 li a {
-    text-align: right;
     display: block;
     color: #000;
-    padding: 3.8px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -47,7 +49,7 @@ li a:hover {
     background-color: rgb(220,235,245);
     color: rgb(23,23,252);
 }
- .mylikeness {
+ .my-likeness {
       position: relative;
       min-height: 600px;
       background-image: url(../assets/images/Nichpicture.jpg);
@@ -56,7 +58,7 @@ li a:hover {
       background-size: cover;
   }
 
-  .mylikeness .nich-title {
+  .my-likeness .nich-title {
      position: absolute;
      top: 40%;
      -webkit-transform: translateY(-50%);
@@ -77,27 +79,20 @@ li a:hover {
    font-size: 2rem;
  }
 
-.travphoto .scenery {
+.travel-photos .scenery {
   float:left;
   height: 25%;
   width: 25%;
   margin: 1rem;
   transform: translate(35%, 0%);
-}
-
-.scenery {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
   box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.4), 3px 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-#myImg1, #myImg2, #myImg3 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+.scenery:hover {opacity: 0.7;}
 
-#myImg1:hover {opacity: 0.7;}
-#myImg2:hover {opacity: 0.7;}
-#myImg3:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -123,7 +118,7 @@ li a:hover {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption1, #caption2, #caption3 {
+.caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -135,7 +130,7 @@ li a:hover {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption1, #caption2, #caption3 {
+.modal-content, .caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;

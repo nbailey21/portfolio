@@ -1,0 +1,23 @@
+.resume-image {
+    float:left;
+    height: 60%;
+    width: 60%;
+    margin: 1rem;
+    transform: translate(33%, 0%);
+    transition: 0.3s;
+    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.4), 3px 6px 20px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.pdf-image {
+  position: absolute;
+  transform: translate(510%, 60%);
+  height: 6%;
+  width: 3%;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.pdf-image:hover {opacity: 1.0;}
