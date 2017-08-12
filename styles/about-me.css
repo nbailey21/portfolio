@@ -1,0 +1,51 @@
+#intro {
+  color: black;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding-top: 40px;
+}
+
+section {
+  background: linear-gradient(45deg, white, rgb(217, 217, 217));
+}
+
+.my-interests h1 {
+  color: white;
+  text-decoration-line: underline;
+  font-size: 120%;
+  margin-left: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.interest-descriptions {
+  margin-left: 20px;
+  text-decoration-line: none;
+  color: white;
+  text-align: center;
+}
+
+.developer {
+  position: relative;
+  background: linear-gradient(75deg, rgb(249, 247, 0), rgb(217, 217, 217));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.traveler {
+  position: relative;
+  min-height: 500px;
+  background-image: url(../assets/images/hiking.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.sports {
+  position: relative;
+  background-image: url(../assets/images/beers.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
