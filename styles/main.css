@@ -14,10 +14,11 @@ html {
  }
 
  .navbar {
-     position: relative;
+     position: fixed;
+     top: 0px;
      padding: 0.5rem;
      background-color: white;
-     z-index: 10;
+     z-index: 9999;
  }
 
  .navbar .logo {
@@ -45,11 +46,18 @@ li a {
     text-transform: uppercase;
 }
 
-li a:hover {
-    background-color: white;
+.navs:hover {
     color: rgb(68,132,206);
 }
- .my-likeness {
+
+.page-name {
+  color: rgb(68,132,206);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(217, 217, 217);
+}
+
+.my-likeness {
       position: relative;
       min-height: 600px;
       background-image: url(../assets/images/Nichpicture.jpg);
@@ -58,7 +66,7 @@ li a:hover {
       background-size: cover;
   }
 
-  .my-likeness .nich-title {
+.my-likeness .nich-title {
      position: absolute;
      top: 40%;
      -webkit-transform: translateY(-50%);
@@ -74,12 +82,17 @@ li a:hover {
      text-shadow: 1px 1px 0px rgb(58,23,63);
 }
 
- #job-title {
+#job-title {
    top: 50%;
    font-size: 2rem;
  }
 
+.travel-photos {
+  height: 265px;
+}
+
 .travel-photos .scenery {
+  overflow: auto;
   float: left;
   height: 25%;
   width: 25%;
@@ -163,6 +176,11 @@ li a:hover {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.portfolio-item {
+  background-color: rgb(217, 217, 217);
+  height: 400px;
 }
 
 /* 100% Image Width on Smaller Screens */

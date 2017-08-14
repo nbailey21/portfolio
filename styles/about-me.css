@@ -1,15 +1,15 @@
+
 #intro {
   color: black;
-  margin-left: 20px;
-  margin-top: 0px;
-  padding-top: 40px;
-}
-
-section {
-  background: linear-gradient(45deg, white, rgb(217, 217, 217));
+  margin-top: 40px;
+  background-color: rgb(217, 217, 217);
+  width: 100%;
+  text-align: center;
+  overflow: auto;
 }
 
 .my-interests h1 {
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
   color: white;
   text-decoration-line: underline;
   font-size: 120%;
@@ -27,7 +27,7 @@ section {
 
 .developer {
   position: relative;
-  background: linear-gradient(75deg, rgb(249, 247, 0), rgb(217, 217, 217));
+  background-color: rgb(68,132,206);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -43,6 +43,7 @@ section {
 }
 
 .sports {
+  height: 400px;
   position: relative;
   background-image: url(../assets/images/beers.png);
   background-repeat: no-repeat;

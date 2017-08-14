@@ -1,11 +1,12 @@
 
 .resume-background {
+  height: 1000px;
   background-color: rgb(217, 217, 217);
 }
 
 .resume-image {
     float:left;
-    height: 60%;
+    height: auto;
     width: 60%;
     margin: 1rem;
     transform: translate(33%, 0%);

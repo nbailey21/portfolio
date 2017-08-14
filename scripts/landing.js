@@ -35,3 +35,98 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal1.style.display = "none";
 }
+
+$(function(){
+  $("#nav-list a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash);
+  });
+});
+
+var waypoint = new Waypoint({
+  element: $('#portfolio'),
+  handler: function(direction) {
+    if (direction == "up") {
+      $('.navs').css("color", "black");
+      $('#nav-portfolio').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '-100%'
+})
+
+var waypoint = new Waypoint({
+  element: $('#portfolio'),
+  handler: function(direction) {
+    if (direction == "down") {
+      $('.navs').css("color", "black");
+      $('#nav-portfolio').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '30%'
+})
+
+var waypoint = new Waypoint({
+  element: $('#about-me'),
+  handler: function(direction) {
+    if (direction == "up") {
+      $('.navs').css("color", "black");
+      $('#nav-about-me').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '-100%'
+})
+
+var waypoint = new Waypoint({
+  element: $('#about-me'),
+  handler: function(direction) {
+    if (direction == "down") {
+      $('.navs').css("color", "black");
+      $('#nav-about-me').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '30%'
+})
+
+var waypoint = new Waypoint({
+  element: $('#resume'),
+  handler: function(direction) {
+    if (direction == "up") {
+      $('.navs').css("color", "black");
+      $('#nav-resume').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '-100%'
+})
+
+var waypoint = new Waypoint({
+  element: $('#resume'),
+  handler: function(direction) {
+    if (direction == "down") {
+      $('.navs').css("color", "black");
+      $('#nav-resume').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '30%'
+})
+
+var waypoint = new Waypoint({
+  element: $('#contact'),
+  handler: function(direction) {
+    if (direction == "up") {
+      $('.navs').css("color", "black");
+      $('#nav-contact').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '-30%'
+})
+
+var waypoint = new Waypoint({
+  element: $('#contact'),
+  handler: function(direction) {
+    if (direction == "down") {
+      $('.navs').css("color", "black")
+      $('#nav-contact').css("color", "rgb(68,132,206)");
+    }
+  },
+  offset: '30%'
+})
