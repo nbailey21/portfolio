@@ -16,37 +16,53 @@
   margin-left: 20px;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
 }
 
 .interest-descriptions {
-  margin-left: 20px;
+  float: right;
+  width: 50%;
+  height: 90vh;
+}
+
+.interest-descriptions p {
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: relative;
+  font-size: 22px;
   text-decoration-line: none;
-  color: white;
   text-align: center;
+  color: rgb(68,132,206);
+  z-index: 2;
 }
 
-.developer {
+.interest-images img {
+  max-height: 90vh;
+  height: auto;
   position: relative;
-  background-color: rgb(68,132,206);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  float: left;
+  max-width: 50%;
 }
 
-.traveler {
+/*.dimmed img{
+  float: left;
+  height: 100vh;
+}*/
+/*.dimmed {
   position: relative;
-  min-height: 500px;
-  background-image: url(../assets/images/hiking.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 }
 
-.sports {
-  height: 400px;
-  position: relative;
-  background-image: url(../assets/images/beers.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.dimmed:after {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}*/
+
+.sports, .traveler, .developer {
+  height: 100vh;
 }

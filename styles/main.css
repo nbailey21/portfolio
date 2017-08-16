@@ -48,6 +48,7 @@ li a {
 
 .navs:hover {
     color: rgb(68,132,206);
+    text-decoration: none;
 }
 
 .page-name {
@@ -94,7 +95,6 @@ li a {
 .travel-photos .scenery {
   overflow: auto;
   float: left;
-  height: 25%;
   width: 25%;
   margin: 1rem;
   transform: translate(35%, 0%);
@@ -176,11 +176,6 @@ li a {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
-
-.portfolio-item {
-  background-color: rgb(217, 217, 217);
-  height: 400px;
 }
 
 /* 100% Image Width on Smaller Screens */
