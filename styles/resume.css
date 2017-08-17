@@ -17,7 +17,7 @@
 
 .pdf-image {
   position: absolute;
-  transform: translate(510%, 60%);
+  transform: translate(440%, 60%);
   height: 6%;
   width: 3%;
   z-index: 2;

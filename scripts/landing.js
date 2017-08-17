@@ -39,10 +39,14 @@ span.onclick = function() {
 $(function(){
   $("#nav-list a").click(function(e){
     e.preventDefault();
+    console.log(this.hash)
     $('html,body').scrollTo(this.hash,this.hash);
   });
 });
 
+// if direction = down remove old css and set to current page of current waypoint
+// else remove css and set to prior page
+
 var waypoint = new Waypoint({
   element: $('#portfolio'),
   handler: function(direction) {
@@ -61,8 +65,7 @@ var waypoint = new Waypoint({
       $('.navs').css("color", "black");
       $('#nav-portfolio').css("color", "rgb(68,132,206)");
     }
-  },
-  offset: '30%'
+  }
 })
 
 var waypoint = new Waypoint({
@@ -72,8 +75,7 @@ var waypoint = new Waypoint({
       $('.navs').css("color", "black");
       $('#nav-about-me').css("color", "rgb(68,132,206)");
     }
-  },
-  offset: '-100%'
+  }
 })
 
 var waypoint = new Waypoint({
@@ -83,8 +85,7 @@ var waypoint = new Waypoint({
       $('.navs').css("color", "black");
       $('#nav-about-me').css("color", "rgb(68,132,206)");
     }
-  },
-  offset: '30%'
+  }
 })
 
 var waypoint = new Waypoint({
@@ -95,7 +96,6 @@ var waypoint = new Waypoint({
       $('#nav-resume').css("color", "rgb(68,132,206)");
     }
   },
-  offset: '-100%'
 })
 
 var waypoint = new Waypoint({
