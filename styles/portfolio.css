@@ -28,3 +28,7 @@
   visibility: visible;
   opacity: 1;
 }
+
+#portfolio {
+  overflow: hidden;
+}

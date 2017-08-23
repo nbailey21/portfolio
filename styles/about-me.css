@@ -1,4 +1,3 @@
-
 #intro {
   color: black;
   margin-top: 40px;
@@ -16,7 +15,6 @@
   margin-left: 20px;
   text-transform: uppercase;
   text-align: center;
-  z-index: 2;
 }
 
 .interest-descriptions {
@@ -42,26 +40,6 @@
   float: left;
   max-width: 50%;
 }
-
-/*.dimmed img{
-  float: left;
-  height: 100vh;
-}*/
-/*.dimmed {
-  position: relative;
-}
-
-.dimmed:after {
-  content: " ";
-  z-index: 1;
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.2);
-}*/
 
 .sports, .traveler, .developer {
   height: 100vh;
